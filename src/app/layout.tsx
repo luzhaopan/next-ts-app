@@ -1,6 +1,9 @@
 
 import type { Metadata } from 'next'
 import './globals.css'
+import { ConfigProvider } from 'antd';
+import StyledComponentsRegistry from '../lib/AntdRegistry';
+import theme from '../theme/themeConfig';
 import LayoutPage from '@/components/Layout';
 
 export const metadata: Metadata = {
@@ -17,9 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <LayoutPage>
-          {children}
-        </LayoutPage>
+        <ConfigProvider theme={theme}>
+          <StyledComponentsRegistry>
+            <LayoutPage>
+              {children}
+            </LayoutPage>
+          </StyledComponentsRegistry>
+        </ConfigProvider>
       </body>
     </html>
   )

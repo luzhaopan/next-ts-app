@@ -19,7 +19,7 @@
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"
 
-"@ant-design/cssinjs@^1.17.5":
+"@ant-design/cssinjs@^1.17.5", "@ant-design/cssinjs@^1.18.0":
   version "1.18.0"
   resolved "https://registry.npmmirror.com/@ant-design/cssinjs/-/cssinjs-1.18.0.tgz#92701684cab5fc67bb62bc813ec1b4a33258018d"
   integrity sha512-NXzfnNjJgpn+L6d0cD2cS14Tsqs46Bsua6PwVMlmN+F0OEoa9PhJRwUWmI+HyIrc4cgVZVfQTDpXC0p07Jmglw==
